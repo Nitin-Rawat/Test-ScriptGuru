@@ -57,7 +57,7 @@ A full-stack MERN application for team collaboration, similar to Trello/Asana. T
 
 1. Navigate to the backend directory:
 ```bash
-cd backend
+cd Server
 ```
 
 2. Install dependencies:
@@ -87,7 +87,7 @@ The backend will run on `http://localhost:5000`
 
 1. Navigate to the frontend directory:
 ```bash
-cd frontend
+cd Client
 ```
 
 2. Install dependencies:
@@ -100,50 +100,9 @@ npm install
 npm start
 ```
 
-The frontend will run on `http://localhost:3000`
+The frontend will run on `http://localhost:5173`
 
-## Project Structure
 
-```
-collaboration-board/
-├── backend/
-│   ├── server.js          # Express server and routes
-│   ├── package.json       # Backend dependencies
-│   └── .env.example       # Environment variables template
-├── frontend/
-│   ├── src/
-│   │   ├── App.js         # Main React component
-│   │   ├── index.js       # React entry point
-│   │   └── index.css      # Tailwind CSS imports
-│   ├── package.json       # Frontend dependencies
-│   ├── tailwind.config.js # Tailwind configuration
-│   └── postcss.config.js  # PostCSS configuration
-└── README.md
-```
-
-## Database Schema
-
-### Board Model
-```javascript
-{
-  name: String (required),
-  createdAt: Date
-}
-```
-
-### Task Model
-```javascript
-{
-  title: String (required),
-  description: String,
-  status: Enum ['To Do', 'In Progress', 'Done'],
-  priority: Enum ['Low', 'Medium', 'High'],
-  assignedTo: String,
-  dueDate: Date,
-  boardId: ObjectId (ref: Board),
-  createdAt: Date
-}
-```
 
 ## Usage
 
