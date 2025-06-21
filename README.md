@@ -131,32 +131,6 @@ The frontend will run on `http://localhost:5173`
 3. Set environment variables (MONGODB_URI, PORT)
 4. Deploy
 
-### Frontend Deployment (Vercel/Netlify)
-1. Build the project: `npm run build`
-2. Deploy the `build` folder to your preferred platform
-3. Update the API_BASE URL to point to your deployed backend
+###  Deployment (Render)
 
-## Future Enhancements
 
-- User authentication and authorization
-- Real-time collaboration with WebSockets
-- Drag and drop functionality for task reordering
-- File attachments for tasks
-- Task comments and activity history
-- Team member management
-- Board templates
-- Advanced filtering and search
-- Email notifications
-- Dark mode theme
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
